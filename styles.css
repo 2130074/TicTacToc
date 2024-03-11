@@ -1,0 +1,135 @@
+body {
+    background-color: #ffecf2;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo {
+    margin-top: 20px;
+    color: #ff80ab;
+    font-size: 2em;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.game-cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #ff80ab;
+    border: 1px solid #ff80ab;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    background-color: #fff;
+    color: #ff80ab;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-cell:hover {
+    background-color: #ffebee;
+    transform: scale(1.05);
+}
+
+.game-info {
+    margin-top: 20px;
+    color: #ff80ab;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.leaderboard {
+    text-align: center;
+    background-color: #ffecf2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.leaderboard h2 {
+    color: #ff80ab;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#leaderboardList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leaderboardList li {
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    background-color: #ffebee;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leaderboardList li:hover {
+    background-color: #f8bbd0;
+}
+
+#leaderboardList li:last-child {
+    margin-bottom: 0;
+}
+
+.leaderboard-name {
+    flex: 1;
+    text-align: left;
+}
+
+.leaderboard-time {
+    flex-shrink: 0;
+    color: #ff80ab;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.start,
+.restart {
+    text-align: center;
+    font-size: large;
+    color: #ff80ab;
+    border: 2px solid #ff80ab;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px 20px;
+}
+
+.start:hover,
+.restart:hover {
+    background-color: #ff80ab;
+    color: #fff;
+}
+
